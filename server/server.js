@@ -29,7 +29,7 @@ app.post('/upload', function(req, res) {
         if(err){return res.status(500).send(err);}
         db('images').insert({
             filename: image.name,
-            name: req.body.name,
+            name: req.body.name || "",
             type: "active"
         }).then(() => res.redirect(homePage));
     });

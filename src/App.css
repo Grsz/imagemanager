@@ -72,7 +72,7 @@ form > *, button{
   border: none;
   width: 20vw
 }
-button{
+button, .upload{
   cursor: pointer;
 }
 .images{

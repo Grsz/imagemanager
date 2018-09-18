@@ -129,7 +129,7 @@ class App extends Component {
               method='post' 
               encType="multipart/form-data">
                 <input type="file" name="image" />
-                <input type="text" name="name" />
+                <input type="text" name="name" placeholder="name"/>
                 <input type='submit' value='Upload!' />
                 <button type="reset" value="Cancel" onClick={this.switchUpload}>Cancel</button>
             </form>
